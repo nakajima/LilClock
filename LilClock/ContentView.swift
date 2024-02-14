@@ -12,6 +12,8 @@ import RealityKitContent
 struct ContentView: View {
 	var startedAt = Date()
 
+	@State private var isShowingSessionTime = true
+
 	var body: some View {
 		VStack(alignment: .leading) {
 			HStack {
@@ -19,17 +21,31 @@ struct ContentView: View {
 					Text(context.date, style: .time)
 						.font(.extraLargeTitle2)
 				}
-
-				Spacer()
-
-				VStack(alignment: .trailing) {
-					Text("Current Session")
-					TimelineView(.periodic(from: startedAt, by: 1.0)) { context in
-						Text(startedAt, style: .relative)
+				.hoverEffect()
+				.onTapGesture {
+					withAnimation {
+						isShowingSessionTime.toggle()
 					}
 				}
-				.font(.subheadline)
-				.foregroundStyle(.secondary)
+
+				if isShowingSessionTime {
+					Spacer()
+
+					VStack(alignment: .trailing) {
+						Text("Current Session")
+						TimelineView(.periodic(from: startedAt, by: 1.0)) { context in
+							Text(startedAt, style: .relative)
+						}
+					}
+					.font(.subheadline)
+					.foregroundStyle(.secondary)
+					.hoverEffect()
+					.onTapGesture {
+						withAnimation {
+							isShowingSessionTime.toggle()
+						}
+					}
+				}
 			}
 		}
 		.padding()
