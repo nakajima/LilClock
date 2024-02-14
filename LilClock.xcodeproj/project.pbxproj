@@ -10,11 +10,9 @@
 		A65E37C42B7C54DD001EE905 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = A65E37C32B7C54DD001EE905 /* RealityKitContent */; };
 		A65E37C62B7C54DD001EE905 /* LilClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E37C52B7C54DD001EE905 /* LilClockApp.swift */; };
 		A65E37C82B7C54DD001EE905 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E37C72B7C54DD001EE905 /* ContentView.swift */; };
-		A65E37CA2B7C54DD001EE905 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E37C92B7C54DD001EE905 /* ImmersiveView.swift */; };
 		A65E37CC2B7C54DE001EE905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65E37CB2B7C54DE001EE905 /* Assets.xcassets */; };
 		A65E37CF2B7C54DE001EE905 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65E37CE2B7C54DE001EE905 /* Preview Assets.xcassets */; };
 		A65E37DA2B7C54DE001EE905 /* LilClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E37D92B7C54DE001EE905 /* LilClockTests.swift */; };
-		A65E37E42B7C5A47001EE905 /* simulator_screenshot_DD29F813-5D30-42C9-980D-39DE44323163.png in Resources */ = {isa = PBXBuildFile; fileRef = A65E37E32B7C5A47001EE905 /* simulator_screenshot_DD29F813-5D30-42C9-980D-39DE44323163.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +30,11 @@
 		A65E37C22B7C54DD001EE905 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		A65E37C52B7C54DD001EE905 /* LilClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilClockApp.swift; sourceTree = "<group>"; };
 		A65E37C72B7C54DD001EE905 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A65E37C92B7C54DD001EE905 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		A65E37CB2B7C54DE001EE905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65E37CE2B7C54DE001EE905 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A65E37D02B7C54DE001EE905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65E37D52B7C54DE001EE905 /* LilClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65E37D92B7C54DE001EE905 /* LilClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilClockTests.swift; sourceTree = "<group>"; };
-		A65E37E32B7C5A47001EE905 /* simulator_screenshot_DD29F813-5D30-42C9-980D-39DE44323163.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simulator_screenshot_DD29F813-5D30-42C9-980D-39DE44323163.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +59,6 @@
 		A65E37B52B7C54DD001EE905 = {
 			isa = PBXGroup;
 			children = (
-				A65E37E32B7C5A47001EE905 /* simulator_screenshot_DD29F813-5D30-42C9-980D-39DE44323163.png */,
 				A65E37C02B7C54DD001EE905 /* LilClock */,
 				A65E37C12B7C54DD001EE905 /* Packages */,
 				A65E37D82B7C54DE001EE905 /* LilClockTests */,
@@ -85,7 +80,6 @@
 			children = (
 				A65E37C52B7C54DD001EE905 /* LilClockApp.swift */,
 				A65E37C72B7C54DD001EE905 /* ContentView.swift */,
-				A65E37C92B7C54DD001EE905 /* ImmersiveView.swift */,
 				A65E37CB2B7C54DE001EE905 /* Assets.xcassets */,
 				A65E37D02B7C54DE001EE905 /* Info.plist */,
 				A65E37CD2B7C54DE001EE905 /* Preview Content */,
@@ -203,7 +197,6 @@
 			files = (
 				A65E37CF2B7C54DE001EE905 /* Preview Assets.xcassets in Resources */,
 				A65E37CC2B7C54DE001EE905 /* Assets.xcassets in Resources */,
-				A65E37E42B7C5A47001EE905 /* simulator_screenshot_DD29F813-5D30-42C9-980D-39DE44323163.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +216,6 @@
 			files = (
 				A65E37C82B7C54DD001EE905 /* ContentView.swift in Sources */,
 				A65E37C62B7C54DD001EE905 /* LilClockApp.swift in Sources */,
-				A65E37CA2B7C54DD001EE905 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
