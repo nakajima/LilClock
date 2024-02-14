@@ -13,6 +13,7 @@
 		A65E37CC2B7C54DE001EE905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65E37CB2B7C54DE001EE905 /* Assets.xcassets */; };
 		A65E37CF2B7C54DE001EE905 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65E37CE2B7C54DE001EE905 /* Preview Assets.xcassets */; };
 		A65E37DA2B7C54DE001EE905 /* LilClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E37D92B7C54DE001EE905 /* LilClockTests.swift */; };
+		A65E37E62B7C7751001EE905 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E37E52B7C7751001EE905 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		A65E37D02B7C54DE001EE905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65E37D52B7C54DE001EE905 /* LilClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65E37D92B7C54DE001EE905 /* LilClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilClockTests.swift; sourceTree = "<group>"; };
+		A65E37E52B7C7751001EE905 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				A65E37C52B7C54DD001EE905 /* LilClockApp.swift */,
 				A65E37C72B7C54DD001EE905 /* ContentView.swift */,
+				A65E37E52B7C7751001EE905 /* AboutView.swift */,
 				A65E37CB2B7C54DE001EE905 /* Assets.xcassets */,
 				A65E37D02B7C54DE001EE905 /* Info.plist */,
 				A65E37CD2B7C54DE001EE905 /* Preview Content */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65E37C82B7C54DD001EE905 /* ContentView.swift in Sources */,
+				A65E37E62B7C7751001EE905 /* AboutView.swift in Sources */,
 				A65E37C62B7C54DD001EE905 /* LilClockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,5 +15,9 @@ struct LilClockApp: App {
 		}
 		.windowResizability(.contentMinSize)
 		.defaultSize(.init(width: 60, height: 20))
+
+		WindowGroup("About", id: "about") {
+			AboutView()
+		}
 	}
 }

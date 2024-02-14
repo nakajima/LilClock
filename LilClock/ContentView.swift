@@ -14,6 +14,8 @@ struct ContentView: View {
 
 	@State private var isShowingSessionTime = true
 
+	@Environment(\.openWindow) var openWindow
+
 	var body: some View {
 		VStack(alignment: .leading) {
 			HStack {
@@ -26,6 +28,9 @@ struct ContentView: View {
 					withAnimation {
 						isShowingSessionTime.toggle()
 					}
+				}
+				.onLongPressGesture {
+					openWindow(id: "about")
 				}
 
 				if isShowingSessionTime {
