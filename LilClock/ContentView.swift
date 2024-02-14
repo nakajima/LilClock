@@ -28,10 +28,14 @@ struct ContentView: View {
 
 				Spacer()
 
-				TimelineView(.periodic(from: startedAt, by: 1.0)) { context in
-					Text(startedAt, style: .relative)
-						.foregroundStyle(.secondary)
+				VStack(alignment: .trailing) {
+					Text("Current Session")
+					TimelineView(.periodic(from: startedAt, by: 1.0)) { context in
+						Text(startedAt, style: .relative)
+					}
 				}
+				.font(.subheadline)
+				.foregroundStyle(.secondary)
 			}
 		}
 		.padding()
