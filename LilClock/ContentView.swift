@@ -10,46 +10,33 @@ import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
+	var startedAt = Date()
 
-    @State private var showImmersiveSpace = false
-    @State private var immersiveSpaceIsShown = false
+	@State private var showImmersiveSpace = false
+	@State private var immersiveSpaceIsShown = false
 
-    @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+	@Environment(\.openImmersiveSpace) var openImmersiveSpace
+	@Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
-    var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
+	var body: some View {
+		VStack(alignment: .leading) {
+			HStack {
+				TimelineView(.periodic(from: Date(), by: 1.0)) { context in
+					Text(context.date, style: .time)
+						.font(.extraLargeTitle2)
+				}
 
-            Text("Hello, world!")
+				Spacer()
 
-            Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
-                .toggleStyle(.button)
-                .padding(.top, 50)
-        }
-        .padding()
-        .onChange(of: showImmersiveSpace) { _, newValue in
-            Task {
-                if newValue {
-                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
-                    case .opened:
-                        immersiveSpaceIsShown = true
-                    case .error, .userCancelled:
-                        fallthrough
-                    @unknown default:
-                        immersiveSpaceIsShown = false
-                        showImmersiveSpace = false
-                    }
-                } else if immersiveSpaceIsShown {
-                    await dismissImmersiveSpace()
-                    immersiveSpaceIsShown = false
-                }
-            }
-        }
-    }
+				TimelineView(.periodic(from: startedAt, by: 1.0)) { context in
+					Text(startedAt, style: .relative)
+						.foregroundStyle(.secondary)
+				}
+			}
+		}
+		.padding()
+	}
 }
-
 #Preview(windowStyle: .automatic) {
     ContentView()
 }

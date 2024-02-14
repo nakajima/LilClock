@@ -9,13 +9,11 @@ import SwiftUI
 
 @main
 struct LilClockApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
-        }
-    }
+	var body: some Scene {
+		WindowGroup {
+			ContentView()
+		}
+		.windowResizability(.contentSize)
+		.defaultSize(.init(width: 60, height: 20))
+	}
 }
